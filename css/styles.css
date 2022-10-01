@@ -455,7 +455,7 @@ select:-webkit-autofill:focus {
 
 .site-footer {
     padding-top: 48px;
-    padding-bottom: 48px;
+    padding-bottom: 28px;
     background-color: var(--dark-green);
 }
 
