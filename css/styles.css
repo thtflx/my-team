@@ -156,6 +156,13 @@ select:-webkit-autofill:focus {
     border: 2px solid trasparent;
 }
 
+.cta__button:active {
+    color: var(--midnight-green);
+    background-color: transparent;
+    border: 2px solid var(--midnight-green);
+    opacity: 0.6;
+}
+
 
 /* SITE-HEADER */
 
