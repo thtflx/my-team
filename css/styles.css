@@ -163,6 +163,17 @@ select:-webkit-autofill:focus {
     opacity: 0.6;
 }
 
+.contact-input__button {
+    background-color: var(--white);
+    color: var(--midnight-green);
+    border: 1px solid var(--white);
+}
+
+.contact-input__button:hover {
+    background-color: var(--midnight-green);
+    color: var(--white);
+}
+
 
 /* SITE-HEADER */
 
@@ -849,7 +860,7 @@ select:-webkit-autofill:focus {
     border-bottom: 1px solid var(--white);
     box-sizing: border-box;
     margin-top: 6px;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
     resize: vertical;
     color: var(--white);
     background-color: var(--midnight-green);
@@ -862,7 +873,7 @@ select:-webkit-autofill:focus {
     border-bottom: 1px solid var(--white);
     box-sizing: border-box;
     margin-top: 6px;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
     resize: vertical;
     color: var(--white);
     background-color: var(--midnight-green);
