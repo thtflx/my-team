@@ -73,13 +73,13 @@
         <div class="contact-input__container container">
             <form class="contact-input__form" action="yoo">
 
-                <input class="contact-input__input" type="text" id="fname" placeholder="Name" name="name">
+                <input class="contact-input__input" type="text" id="fname" placeholder="Name" name="name" maxlength="32" pattern="[A-Za-z]{6}" required>
 
-                <input class="contact-input__input" type="email" id="lname" placeholder="Email Address" name="email">
+                <input class="contact-input__input" type="email" id="lname" placeholder="Email Address" name="email" maxlength="1000" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
 
-                <input class="contact-input__input" type="text" id="fname" placeholder="Company Name" name="company name">
+                <input class="contact-input__input" type="text" id="fname" placeholder="Company Name" name="company name" maxlength="100" pattern="[A-Za-z]{3,}" required>
 
-                <input class="contact-input__input" type="text" id="fname" placeholder="Title" name="title">
+                <input class="contact-input__input" type="text" id="fname" placeholder="Title" name="title" maxlength="100" pattern="[A-Za-z]{3,}" required>
 
                 <!-- <label class="contact-input__label" for="subject">Message</label> -->
                 <textarea class="contact-input__textarea" id="subject" placeholder="Message" name="subject" style="height:100px"></textarea>

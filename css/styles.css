@@ -851,8 +851,6 @@ select:-webkit-autofill:focus {
 
 /* contact-input */
 
-.contact-input__container {}
-
 .contact-input__input {
     width: 100%;
     padding: 16px;
@@ -877,6 +875,19 @@ select:-webkit-autofill:focus {
     resize: vertical;
     color: var(--white);
     background-color: var(--midnight-green);
+}
+
+.contact-input__input:focus {
+    outline: 1px solid dashed;
+    outline-offset: 2px;
+}
+
+.contact-input__input:not(:placeholder-shown) {
+    border: 2px solid rgb(191, 29, 29);
+}
+
+.contact-input__input:valid {
+    border: 2px solid rgb(40, 191, 29);
 }
 
 .contact-input__form {
