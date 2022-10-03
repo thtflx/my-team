@@ -782,6 +782,12 @@ select:-webkit-autofill:focus {
 
 /* MAIN-WRAPPER */
 
+.main-wrapper__bg {
+    background-image: url("../img/home/home-directors-bg-min.svg"), url("../img/home/contact-bg.svg");
+    background-repeat: no-repeat;
+    background-position: -100px 20px, 1420px 360px;
+}
+
 .main-wrapper {
     display: flex;
     padding-top: 0;

@@ -25,15 +25,15 @@
     <!-- SITE-HEADER -->
     <header class="site-header">
         <div class="site-header__container container">
-            <a class="site-header__logo-link" href="#">
+            <a class="site-header__logo-link" href="index.html">
                 <img class="site-header__logo" src="img/myteam 2-min.svg" alt="logo">
             </a>
             <ul class="site-header__list">
                 <li class="site-header__item">
-                    <a href="#" class="site-header__link">home</a>
+                    <a href="index.html" class="site-header__link">home</a>
                 </li>
                 <li class="site-header__item">
-                    <a href="#" class="site-header__link">about</a>
+                    <a href="about.html" class="site-header__link">about</a>
                 </li>
             </ul>
             <a class="site-header__button button">contact us</a>
@@ -42,69 +42,71 @@
 
 
     <!-- MAIN-WRAPPER -->
-    <section class="main-wrapper container">
-        <!-- contact-info -->
-        <div class="contact-info__container container">
-            <h2 class="contact-info__title">Contact</h2>
-            <h3 class="contact-info__subtitle">Ask about us</h3>
-            <ul class="contact-info__list">
-                <li class="contact-info__item">
-                    <img class="contact-info__img" src="img/experience-icon-min.svg" width="72" height="72" alt="experience-icon">
-                    <div class="contact-info__info">
-                        <p class="contact-info__info-text">The quality of our talent network</p>
-                    </div>
-                </li>
-                <li class="contact-info__item">
-                    <img class="contact-info__img" src="img/easy-icon-min.svg" width="72" height="72" alt="easy-icon">
-                    <div class="contact-info__info">
-                        <p class="contact-info__info-text">Usage & implementation of our software</p>
-                    </div>
-                </li>
-                <li class="contact-info__item">
-                    <img class="contact-info__img" src="img/enhanced-icon-min.svg" width="72" height="72" alt="enhanced-icon">
-                    <div class="contact-info__info">
-                        <p class="contact-info__info-text">How we help drive innovation</p>
-                    </div>
-                </li>
-            </ul>
+    <div class="main-wrapper__bg">
+        <div class="main-wrapper container">
+            <!-- contact-info -->
+            <div class="contact-info__container container">
+                <h2 class="contact-info__title">Contact</h2>
+                <h3 class="contact-info__subtitle">Ask about us</h3>
+                <ul class="contact-info__list">
+                    <li class="contact-info__item">
+                        <img class="contact-info__img" src="img/experience-icon-min.svg" width="72" height="72" alt="experience-icon">
+                        <div class="contact-info__info">
+                            <p class="contact-info__info-text">The quality of our talent network</p>
+                        </div>
+                    </li>
+                    <li class="contact-info__item">
+                        <img class="contact-info__img" src="img/easy-icon-min.svg" width="72" height="72" alt="easy-icon">
+                        <div class="contact-info__info">
+                            <p class="contact-info__info-text">Usage & implementation of our software</p>
+                        </div>
+                    </li>
+                    <li class="contact-info__item">
+                        <img class="contact-info__img" src="img/enhanced-icon-min.svg" width="72" height="72" alt="enhanced-icon">
+                        <div class="contact-info__info">
+                            <p class="contact-info__info-text">How we help drive innovation</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- contact-input -->
+            <div class="contact-input__container container">
+                <form class="contact-input__form" action="yoo">
+
+                    <input class="contact-input__input" type="text" id="fname" placeholder="Name" name="name" maxlength="32" pattern="[A-Za-z]{6}" required>
+
+                    <input class="contact-input__input" type="email" id="lname" placeholder="Email Address" name="email" maxlength="1000" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+
+                    <input class="contact-input__input" type="text" id="fname" placeholder="Company Name" name="company name" maxlength="100" pattern="[A-Za-z]{3,}" required>
+
+                    <input class="contact-input__input" type="text" id="fname" placeholder="Title" name="title" maxlength="100" pattern="[A-Za-z]{3,}" required>
+
+                    <!-- <label class="contact-input__label" for="subject">Message</label> -->
+                    <textarea class="contact-input__textarea" id="subject" placeholder="Message" name="subject" style="height:100px"></textarea>
+
+                    <a class="contact-input__button button" href="#">submit</a>
+
+                </form>
+            </div>
         </div>
 
-        <!-- contact-input -->
-        <div class="contact-input__container container">
-            <form class="contact-input__form" action="yoo">
-
-                <input class="contact-input__input" type="text" id="fname" placeholder="Name" name="name" maxlength="32" pattern="[A-Za-z]{6}" required>
-
-                <input class="contact-input__input" type="email" id="lname" placeholder="Email Address" name="email" maxlength="1000" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
-
-                <input class="contact-input__input" type="text" id="fname" placeholder="Company Name" name="company name" maxlength="100" pattern="[A-Za-z]{3,}" required>
-
-                <input class="contact-input__input" type="text" id="fname" placeholder="Title" name="title" maxlength="100" pattern="[A-Za-z]{3,}" required>
-
-                <!-- <label class="contact-input__label" for="subject">Message</label> -->
-                <textarea class="contact-input__textarea" id="subject" placeholder="Message" name="subject" style="height:100px"></textarea>
-
-                <a class="contact-input__button button" href="#">submit</a>
-
-            </form>
-        </div>
-    </section>
-
+    </div>
 
     <!-- SITE-FOOTER -->
     <footer class="site-footer">
         <div class="site-footer__container container">
             <!-- content -->
             <div class="site-footer__content">
-                <a class="site-footer__logo-link" href="#">
+                <a class="site-footer__logo-link" href="index.html">
                     <img class="site-footer__logo" src="img/myteam 2-min.svg" alt="logo">
                 </a>
                 <ul class="site-footer__list">
                     <li class="site-footer__item">
-                        <a href="#" class="site-footer__link">home</a>
+                        <a href="index.html" class="site-footer__link">home</a>
                     </li>
                     <li class="site-footer__item">
-                        <a href="#" class="site-footer__link">about</a>
+                        <a href="about.html" class="site-footer__link">about</a>
                     </li>
                 </ul>
             </div>
