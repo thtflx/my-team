@@ -759,9 +759,9 @@ select:-webkit-autofill:focus {
     background-color: var(--light-coral);
 }
 
-.rotate:hover {
+.directors__cycle:hover {
     background-color: var(--rapture-blue);
-    transform: rotate(-45deg);
+    /* transform: rotate(-45deg); */
 }
 
 .directors__cycle-last {
@@ -771,6 +771,11 @@ select:-webkit-autofill:focus {
     width: 56px;
     height: 56px;
     border-radius: 50%;
+    background-color: var(--light-coral);
+}
+
+.directors__cycle-last:hover {
+    transform: rotate(-45deg);
     background-color: var(--light-coral);
 }
 
@@ -803,11 +808,17 @@ select:-webkit-autofill:focus {
     display: flex;
 }
 
-.directors__social {
-    /* padding-bottom: 35px; */
+.directors__social-link {
+    color: var(--white);
 }
 
-.directors__social-icon {}
+.directors__social-link:not(:last-child) {
+    margin-right: 16px;
+}
+
+.directors__social-link:hover {
+    color: var(--light-coral);
+}
 
 
 /* MAIN-WRAPPER */
