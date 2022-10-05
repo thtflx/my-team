@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Title -->
-    <title>Home</title>
+    <title>About</title>
 
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,13 +30,13 @@
             </a>
             <ul class="site-header__list">
                 <li class="site-header__item">
-                    <a href="#" class="site-header__link">home</a>
+                    <a href="index.html" class="site-header__link">home</a>
                 </li>
                 <li class="site-header__item">
-                    <a href="#" class="site-header__link">about</a>
+                    <a href="about.html" class="site-header__link">about</a>
                 </li>
             </ul>
-            <a class="site-header__button button">contact us</a>
+            <a class="site-header__button button" href="contact.html">contact us</a>
         </div>
     </header>
 
@@ -54,81 +54,98 @@
 
     <!-- DIRECTORS -->
     <section class="directors">
-        <div class="directors__container container">
-            <h2 class="directors__title">Meet the directors</h2>
-            <nav class="directors__nav">
-                <ul class="directors__list">
-                    <li class="directors__item">
-                        <div class="directors__info__wrapper">
-                            <img class="director__img" src="img/home/nikita-min.svg" alt="one of directors" width="96" height="96">
-                            <h3 class="directors__name">Nikita Marks</h3>
-                            <p class="directors__job-title">Founder & CEO</p>
-                            <div class="directors__cycle">
-                                <img class="directors__cycle__inner" src="img/home/plus-icon.svg" alt="plus icon" width="16" height="16">
-                            </div>
-                        </div>
-                    </li>
-                    <li class="directors__item">
-                        <div class="directors__info__wrapper">
-                            <img class="director__img" src="img/home/cristian-min.svg" alt="one of directors" width="96" height="96">
-                            <h3 class="directors__name">Cristian Duncan</h3>
-                            <p class="directors__job-title">Co-founder & COO</p>
-                            <div class="directors__cycle">
-                                <img class="directors__cycle__inner" src="img/home/plus-icon.svg" alt="plus icon" width="16" height="16">
-                            </div>
-                        </div>
-                    </li>
-                    <li class="directors__item">
-                        <div class="directors__info__wrapper">
-                            <img class="director__img" src="img/home/cruz-min.svg" alt="one of directors" width="96" height="96">
-                            <h3 class="directors__name">Cruz Hamer</h3>
-                            <p class="directors__job-title">Co-founder & CTO</p>
-                            <div class="directors__cycle">
-                                <img class="directors__cycle__inner" src="img/home/plus-icon.svg" alt="plus icon" width="16" height="16">
-                            </div>
-                        </div>
-                    </li>
-                    <li class="directors__item">
-                        <div class="directors__info__wrapper">
-                            <img class="director__img" src="img/home/drake-min.svg" alt="one of directors" width="96" height="96">
-                            <h3 class="directors__name">Drake Heaton</h3>
-                            <p class="directors__job-title">Business Development Lead</p>
-                            <div class="directors__cycle">
-                                <img class="directors__cycle__inner" src="img/home/plus-icon.svg" alt="plus icon" width="16" height="16">
-                            </div>
-                        </div>
-                    </li>
-                    <li class="directors__item">
-                        <div class="directors__info__wrapper">
-                            <img class="director__img" src="img/home/griffin-min.svg" alt="one of directors" width="96" height="96">
-                            <h3 class="directors__name">Griffin Wise</h3>
-                            <p class="directors__job-title">Lead Marketing</p>
-                            <div class="directors__cycle">
-                                <img class="directors__cycle__inner" src="img/home/plus-icon.svg" alt="plus icon" width="16" height="16">
-                            </div>
-                        </div>
-                    </li>
-                    <li class="directors__item">
-                        <div class="directors__info__wrapper dark-green-wrapper">
-                            <h3 class="directors__name">Aden Allan</h3>
-                            <p class="directors__opinion">“Empowered teams create truly amazing products. Set the north star and let them follow it.”</p>
-                            <div class="directors__socials">
-                                <a class="directors__social" href="#">
-                                    <img class="directors__social-icon" src="img/icon-twitter-min.svg" alt="twitter icon">
-                                </a>
-                                <a class="directors__social" href="#">
-                                    <img class="directors__social-icon" src="img/home/linkedin-icon-min.svg" alt="linkedin icon">
-                                </a>
-                            </div>
-                            <div class="directors__cycle">
-                                <img class="directors__cycle__inner" src="img/home/plus-icon.svg" alt="plus icon" width="16" height="16">
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
+        <h2 class="directors__title">Meet the directors</h2>
+
+        <!-- NEWS-GRID -->
+        <div class="directors-grid">
+
+
+            <!-- DIRECTORS-GRID-ITEM 1 -->
+            <article class="directors-grid-item article-card">
+                <img class="director__img" src="img/home/nikita-min.svg" alt="one of directors" width="96" height="96">
+                <h3 class="directors__name">Nikita Marks</h3>
+                <p class="directors__job-title">Founder & CEO</p>
+                <a class="directors__cycle rotate">
+                    <svg class="directors__cycle__inner-link" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0H6V6H0V10H6V16H10V10H16V6H10V0Z" fill="currentColor"/>
+                    </svg>
+                </a>
+            </article>
+
+
+            <!-- DIRECTORS-GRID-ITEM 2 -->
+            <article class="directors-grid-item article-card">
+                <img class="director__img" src="img/home/cristian-min.svg" alt="one of directors" width="96" height="96">
+                <h3 class="directors__name">Cristian Duncan</h3>
+                <p class="directors__job-title">Co-founder & COO</p>
+                <a class="directors__cycle rotate">
+                    <svg class="directors__cycle__inner-link" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0H6V6H0V10H6V16H10V10H16V6H10V0Z" fill="currentColor"/>
+                    </svg>
+                </a>
+            </article>
+
+
+            <!-- DIRECTORS-GRID-ITEM 3 -->
+            <article class="directors-grid-item article-card">
+                <img class="director__img" src="img/home/cruz-min.svg" alt="one of directors" width="96" height="96">
+                <h3 class="directors__name">Cruz Hamer</h3>
+                <p class="directors__job-title">Co-founder & CTO</p>
+                <a class="directors__cycle rotate">
+                    <svg class="directors__cycle__inner-link" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0H6V6H0V10H6V16H10V10H16V6H10V0Z" fill="currentColor"/>
+                    </svg>
+                </a>
+            </article>
+
+
+            <!-- DIRECTORS-GRID-ITEM 4 -->
+            <article class="directors-grid-item article-card">
+                <img class="director__img" src="img/home/drake-min.svg" alt="one of directors" width="96" height="96">
+                <h3 class="directors__name">Drake Heaton</h3>
+                <p class="directors__job-title">Business Development Lead</p>
+                <a class="directors__cycle rotate">
+                    <svg class="directors__cycle__inner-link" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0H6V6H0V10H6V16H10V10H16V6H10V0Z" fill="currentColor"/>
+                    </svg>
+                </a>
+            </article>
+
+
+            <!-- DIRECTORS-GRID-ITEM 5 -->
+            <article class="directors-grid-item article-card">
+                <img class="director__img" src="img/home/griffin-min.svg" alt="one of directors" width="96" height="96">
+                <h3 class="directors__name">Griffin Wise</h3>
+                <p class="directors__job-title">Lead Marketing</p>
+                <a class="directors__cycle rotate">
+                    <svg class="directors__cycle__inner-link" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0H6V6H0V10H6V16H10V10H16V6H10V0Z" fill="currentColor"/>
+                    </svg>
+                </a>
+            </article>
+
+
+            <!-- DIRECTORS-GRID-ITEM 6 -->
+            <article class="directors-grid-item article-card">
+                <h3 class="directors__name">Aden Allan</h3>
+                <p class="directors__opinion">“Empowered teams create truly amazing products. Set the north star and let them follow it.”</p>
+                <div class="directors__socials">
+                    <a class="directors__social" href="#">
+                        <img class="directors__social-icon" src="img/icon-twitter-min.svg" alt="twitter icon">
+                    </a>
+                    <a class="directors__social" href="#">
+                        <img class="directors__social-icon" src="img/home/linkedin-icon-min.svg" alt="linkedin icon">
+                    </a>
+                </div>
+                <a class="directors__cycle-last rotate">
+                    <svg class="directors__cycle__inner-link" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0H6V6H0V10H6V16H10V10H16V6H10V0Z" fill="currentColor"/>
+                    </svg>
+                </a>
+            </article>
 
         </div>
+
     </section>
 
     <!-- CLIENTS -->
@@ -160,7 +177,7 @@
     <section class="cta">
         <div class="cta__container container">
             <h2 class="cta__title">Ready to get started?</h2>
-            <a class="cta__button button" href="#">contact us</a>
+            <a class="cta__button button" href="contact.html">contact us</a>
         </div>
     </section>
 
@@ -174,10 +191,10 @@
                 </a>
                 <ul class="site-footer__list">
                     <li class="site-footer__item">
-                        <a href="#" class="site-footer__link">home</a>
+                        <a href="index.html" class="site-footer__link">home</a>
                     </li>
                     <li class="site-footer__item">
-                        <a href="#" class="site-footer__link">about</a>
+                        <a href="about.html" class="site-footer__link">about</a>
                     </li>
                 </ul>
             </div>

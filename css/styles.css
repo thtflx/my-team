@@ -586,7 +586,12 @@ select:-webkit-autofill:focus {
 /* HOME page */
 
 .about {
+    padding-top: 80px;
+    padding-bottom: 120px;
     background-color: var(--midnight-green);
+    background-image: url("../img/home/home-hero-bg-min.svg");
+    background-repeat: no-repeat;
+    background-position: 1420px bottom;
 }
 
 .about__container {
@@ -629,6 +634,8 @@ select:-webkit-autofill:focus {
 
 .directors {
     background-color: var(--deep-jungle-green);
+    padding-left: 150px;
+    padding-right: 150px;
 }
 
 
@@ -674,9 +681,36 @@ select:-webkit-autofill:focus {
 .directors {
     padding-top: 140px;
     padding-bottom: 140px;
+    background-image: url("../img/hero-left-bg-min.svg"), url("../img/reviews-bg-left-min.svg");
+    background-position: -100px 0px, bottom right;
+    background-repeat: no-repeat;
 }
 
-.directors__container {}
+
+/* NEW-GRID */
+
+.directors-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 30px;
+}
+
+.directors-grid-item {
+    width: 350px;
+    margin-left: 30px;
+    margin-bottom: 45px;
+}
+
+.article-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 32px 24px 15px; */
+    padding-top: 32px;
+    padding-left: 24px;
+    padding-right: 24px;
+    background-color: var(--sacramento-state-green);
+}
 
 .directors__title {
     padding-top: 0;
@@ -686,27 +720,6 @@ select:-webkit-autofill:focus {
     line-height: 48px;
     /* identical to box height, or 100% */
     text-align: center;
-}
-
-.directors__nav {}
-
-.directors__list {
-    flex-wrap: ;
-    display: flex;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-.directors__info__wrapper {
-    padding-top: 32px;
-    text-align: center;
-    width: 351px;
-    background-color: var(--sacramento-state-green);
-}
-
-.directors__item:not(:last-child) {
-    margin-right: 30px;
 }
 
 .director__img {
@@ -729,7 +742,6 @@ select:-webkit-autofill:focus {
 
 .directors__job-title {
     margin-top: 0;
-    margin-bottom: 28px;
     font-weight: 500;
     font-size: 15px;
     line-height: 25px;
@@ -739,6 +751,7 @@ select:-webkit-autofill:focus {
 
 .directors__cycle {
     position: relative;
+    top: 25px;
     margin-top: 0;
     width: 56px;
     height: 56px;
@@ -746,9 +759,26 @@ select:-webkit-autofill:focus {
     background-color: var(--light-coral);
 }
 
-.directors__cycle__inner {
+.rotate:hover {
+    background-color: var(--rapture-blue);
+    transform: rotate(-45deg);
+}
+
+.directors__cycle-last {
+    position: relative;
+    top: 52px;
+    margin-top: 0;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: var(--light-coral);
+}
+
+.directors__cycle__inner-link {
+    color: var(--sacramento-state-green);
     position: absolute;
-    /* bottom: 1px; */
+    top: 20px;
+    right: 20px;
     width: 16px;
     height: 16px;
     object-fit: contain;
@@ -774,7 +804,7 @@ select:-webkit-autofill:focus {
 }
 
 .directors__social {
-    padding-bottom: 35px;
+    /* padding-bottom: 35px; */
 }
 
 .directors__social-icon {}
